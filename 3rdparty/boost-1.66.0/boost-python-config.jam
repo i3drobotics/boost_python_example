@@ -1,0 +1,8 @@
+import toolset : using ;
+using python 
+: 3.5  # Version
+: C:/Code/boost_python_example/3rdparty/boost-1.66.0/../python-3.5/python/python.exe  # Interpreter
+: C:/Code/boost_python_example/3rdparty/boost-1.66.0/../python-3.5/python/include  # Interpreter
+: C:/Code/boost_python_example/3rdparty/boost-1.66.0/../python-3.5/python/libs  # Interpreter
+: <toolset>msvc
+;

@@ -1,8 +1,0 @@
-import toolset : using ;
-using python 
-: 3.5  # Version
-: C:/ProgramData/Anaconda3/python.exe  # Interpreter
-: C:/ProgramData/Anaconda3/include/include  # inc dir
-: C:/ProgramData/Anaconda3/libs  # link libs
-: <toolset>msvc
-;
