@@ -21,6 +21,11 @@ bitsadmin /transfer Boost_Download_Job /download /priority normal %url% %output%
 :: install boost in current directory
 echo Installing boost...
 %z7path% x boost_1_66_0.7z
+:: build boost
+cd boost_1_66_0
+::bootstrap
+::bjam
+cd ..
 
 :: remove installer
 del boost_1_66_0.7z
