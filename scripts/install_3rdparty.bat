@@ -17,6 +17,5 @@ cd %initcwd%
 
 :: complete message
 echo 3rdparty install complete.
-pause
 
 ENDLOCAL

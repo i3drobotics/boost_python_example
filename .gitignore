@@ -1,8 +1,8 @@
 /3rdparty/python-3.5/python
+/3rdparty/python-3.5/*.tmp
 /3rdparty/boost-1.66.0/boost_1_66_0
-/3rdparty/boost-1.66.0/boost_1_66_0.7z
-/build
-/3rdparty/*.tmp
-*__pycache__
 /3rdparty/boost-1.66.0/boost_1_66_0.tar.gz
+/build
 /install
+*__pycache__
+/.vscode
