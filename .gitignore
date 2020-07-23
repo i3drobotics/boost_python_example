@@ -5,3 +5,4 @@
 /3rdparty/*.tmp
 *__pycache__
 /3rdparty/boost-1.66.0/boost_1_66_0.tar.gz
+/install
