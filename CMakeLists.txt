@@ -6,7 +6,21 @@ project(boostpythonapp VERSION 0.0.1 DESCRIPTION "Example app for embedding boos
 # Define GNU standard installation directories
 include(GNUInstallDirs)
 
-include_directories(${PROJECT_SOURCE_DIR}/src)
+include_directories(
+	${PROJECT_SOURCE_DIR}/src
+	${PROJECT_SOURCE_DIR}/include
+)
+
+set(HEADERS
+	${HEADERS}
+  include/pyhelper.hpp
+  include/testpyhelper.hpp
+)
+
+set(SOURCES
+	${SOURCES}
+    src/main.cpp
+)
 
 set(Python_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/python-3.5/python)
 find_package (PythonLibs 3.5 EXACT REQUIRED)
@@ -32,7 +46,7 @@ find_package(Boost 1.66.0 COMPONENTS python3 numpy3)
 
 if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS}) 
-    add_executable(boostpythonapp src/main.cpp) 
+    add_executable(boostpythonapp ${SOURCES} ${HEADERS}) 
     target_link_libraries(boostpythonapp ${Boost_LIBRARIES} ${PYTHON_LIBRARIES})
 endif()
 
